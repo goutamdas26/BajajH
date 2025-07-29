@@ -7,7 +7,9 @@ const dob = "26052004";
 const user_id = `${full_name.toLowerCase()}_${dob}`;
 app.use(express.json());
 
-
+app.get("/",(req,res)=>{
+  res.send("Server Running");
+})
 app.post("/bfhl", (req, res) => {
 try{
     const { data } = req.body;
