@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = 3000; 
 
-const full_name = "eg_user";
-const dob = "29072005"; 
+const full_name = "goutam_das";
+const dob = "26052004"; 
 const user_id = `${full_name.toLowerCase()}_${dob}`;
 app.use(express.json());
 
@@ -21,7 +21,7 @@ try{
         is_success: true,
         user_id,
         email: "goutam@example.com",
-        roll_number: "ABC123",
+        roll_number: "2211981160",
         even_numbers: [],
         odd_numbers: [],
         alphabets: [],
